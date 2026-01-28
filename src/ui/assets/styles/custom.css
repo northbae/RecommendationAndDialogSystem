@@ -1,0 +1,44 @@
+.main {
+    background-color: #f8f9fa;
+}
+
+.stExpander {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.stButton > button {
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3 {
+    color: #1f2937;
+    font-family: 'Arial', sans-serif;
+}
+
+[data-testid="stMetricValue"] {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+.css-1d391kg {
+    background-color: #f1f5f9;
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}

@@ -1,0 +1,35 @@
+data:
+  raw_dataset: "data/raw/news_dataset.csv"
+  similarity_matrices: "data/process/similarity_matrices/"
+  cache_dir: "data/cache/"
+
+similarity:
+  weights:
+    category: 0.35
+    tags: 0.30
+    author: 0.15
+    numeric: 0.10
+    binary: 0.05
+    geographic: 0.03
+    time: 0.02
+
+  numeric_metric: "manhattan"  # euclidean, manhattan, cosine, chebyshev
+
+  aggregation: "mean"  # mean, max, weighted
+
+recommendations:
+  default_n: 10
+  max_n: 50
+  like_weight: 1.0
+  dislike_weight: 0.5
+
+ui:
+  console:
+    page_size: 10
+  streamlit:
+    theme: "light"
+    sidebar_collapsed: false
+
+cache:
+  enabled: true
+  ttl: 3600
