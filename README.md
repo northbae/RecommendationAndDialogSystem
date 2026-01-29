@@ -1,68 +1,65 @@
-Проект представляет собой комплексное решение, объединяющее **рекомендательную систему** и **диалоговую систему** (чат-бота). Интерфейс реализован с использованием библиотеки Streamlit.
+# Recommendation and Dialog System
 
-## Описание
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Enabled-FF4B4B)
 
-Приложение позволяет пользователям взаимодействовать с системой через чат-интерфейс, получая персонализированные рекомендации и ответы на запросы.
+This project is a comprehensive solution combining a recommendation system and a dialogue system (chatbot). The interface is implemented using the Streamlit library.
 
-**Ключевые возможности:**
-*   **Диалоговая система:** Обработка естественного языка для общения с пользователем.
-*   **Рекомендательная система:** Алгоритмы подбора контента/товаров на основе предпочтений.
-*   **Интерактивный UI:** Удобный веб-интерфейс на базе Streamlit.
+## Description
 
-## Технологический стек
+The application allows users to interact with the system via a chat interface to receive personalized recommendations and responses to queries.
 
-*   **Python** 3.x
-*   **Streamlit** (UI)
-*   **scikit-learn**
-*   **Transformers**
+### Key Features
 
-## Установка и запуск
+*   **Dialogue System:** Natural language processing (NLP) for user communication.
+*   **Recommendation System:** Algorithms for matching content/items based on preferences.
+*   **Interactive UI:** User-friendly web interface powered by Streamlit.
 
-Следуйте инструкции ниже, чтобы развернуть проект локально.
+## Tech Stack
 
-### Предварительные требования
+*   **Language:** Python 3.12
+*   **UI Framework:** Streamlit
+*   **ML Libraries:** scikit-learn, Transformers
 
-Убедитесь, что у вас установлен Python версии 3.8 или выше.
+## Installation and Setup
 
-### 1. Клонирование репозитория
+Follow the instructions below to deploy the project locally.
+
+### Prerequisites
+
+Ensure you have **Python 3.8** or higher installed.
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/northbae/RecommendationAndDialogSystem.git
-cd название-репозитория
+cd RecommendationAndDialogSystem
 ```
-
-### 2. Создание виртуального окружения (рекомендуется)
+### 2. Create a virtual environment (Recommended)
 Windows:
-
-```bash
+```Bash
 python -m venv venv
 .\venv\Scripts\activate
 ```
 macOS / Linux:
-
-```bash
+```Bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-
-### 3. Установка зависимостей
-Вы можете установить зависимости через requirements.txt:
-
-```bash
+### 3. Install dependencies
+You can install dependencies using requirements.txt:
+```Bash
 pip install -r requirements.txt
 ```
-Или, так как в проекте есть setup.py, установить проект в режиме редактирования:
-
-```bash
+Or, since the project includes setup.py, install the project in editable mode:
+```Bash
 pip install -e .
 ```
-
-## Использование
-Для запуска веб-интерфейса выполните следующую команду из корня проекта:
-
-```bash
+## Usage
+To launch the web interface, execute the following command from the project root:
+```Bash
 streamlit run src/ui/streamlit_ui.py --server.port 8080
 ```
-После запуска приложение будет доступно в браузере по адресу:
+After launching, the application will be available in your browser at:
 
 http://localhost:8080
